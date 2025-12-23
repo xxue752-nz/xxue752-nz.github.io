@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Xiangyuan Xue</title>
+  <meta name="description" content="Personal website of Xiangyuan Xue." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Xiangyuan Xue</a>
+      <nav class="links">
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="card hero">
+      <div>
+        <h1 class="title">Xiangyuan Xue</h1>
+        <p class="subtitle">
+          Computer Science student at the University of Auckland.
+          My interests include machine learning, mental health AI, and wearable sensing.
+        </p>
+
+        <div class="meta">
+          <div><strong>Email:</strong> <a href="mailto:xxue752@aucklanduni.ac.nz">xxue752@aucklanduni.ac.nz</a></div>
+          <div><strong>GitHub:</strong> <a href="https://github.com/xxue752-nz" target="_blank" rel="noreferrer">xxue752-nz</a></div>
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:flex-end;">
+        <img class="avatar" src="images/profile.jpg" alt="Profile photo" />
+      </div>
+    </section>
+
+    <section class="card" id="publications" style="margin-top:14px;">
+      <h2 class="section-title">Publications</h2>
+
+      <ol class="publist">
+        <li>
+          <div class="pub-title">Menta: On device small language model for mental health</div>
+          <div class="pub-meta">Xiangyuan Xue, … · arXiv · 2025</div>
+          <div class="pub-meta">
+            <a href="#" target="_blank" rel="noreferrer">Paper</a>
+            ·
+            <a href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </li>
+
+        <li>
+          <div class="pub-title">Another paper title</div>
+          <div class="pub-meta">Authors · Venue · Year</div>
+          <div class="pub-meta">
+            <a href="#" target="_blank" rel="noreferrer">Paper</a>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="card" id="contact" style="margin-top:14px;">
+      <h2 class="section-title">Contact</h2>
+      <p style="margin:0;">
+        Email: <a href="mailto:xxue752@aucklanduni.ac.nz">xxue752@aucklanduni.ac.nz</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Xiangyuan Xue
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
