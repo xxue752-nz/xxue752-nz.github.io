@@ -12,61 +12,124 @@
     <div class="container nav">
       <a class="brand" href="index.html">Xiangyuan Xue</a>
       <nav class="links">
+        <a href="#about">About</a>
         <a href="#publications">Publications</a>
+        <a href="#research">Research</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="container main">
+    <!-- Hero -->
     <section class="card hero">
       <div>
         <h1 class="title">Xiangyuan Xue</h1>
         <p class="subtitle">
-          Computer Science student at the University of Auckland.
-          My interests include machine learning, mental health AI, and wearable sensing.
+          BSc (Hons) in Computer Science @ The University of Auckland (Expected 2028).<br />
+          Research interests: on-device small language models, wearable sensing foundation models,
+          and multimodal/embodied reasoning.
         </p>
 
         <div class="meta">
           <div><strong>Email:</strong> <a href="mailto:xxue752@aucklanduni.ac.nz">xxue752@aucklanduni.ac.nz</a></div>
           <div><strong>GitHub:</strong> <a href="https://github.com/xxue752-nz" target="_blank" rel="noreferrer">xxue752-nz</a></div>
+          <div><strong>ORCID:</strong> <a href="https://orcid.org/0009-0002-3098-9692" target="_blank" rel="noreferrer">0009-0002-3098-9692</a></div>
         </div>
       </div>
 
       <div style="display:flex; justify-content:flex-end;">
+        <!-- 照片路径在这里改：images/profile.jpg -->
         <img class="avatar" src="images/profile.jpg" alt="Profile photo" />
       </div>
     </section>
 
+    <!-- About -->
+    <section class="card" id="about" style="margin-top:14px;">
+      <h2 class="section-title">About</h2>
+      <p style="margin:0;">
+        I am an undergraduate Computer Science (Honours) student at the University of Auckland.
+        I work on efficient and practical machine learning systems, with a focus on building and evaluating
+        small language models for mental health applications and foundation models for wearable sensor data.
+        I am also interested in multimodal reasoning and embodied agents that plan and act in long-horizon tasks.
+      </p>
+    </section>
+
+    <!-- Publications (only one) -->
     <section class="card" id="publications" style="margin-top:14px;">
       <h2 class="section-title">Publications</h2>
 
       <ol class="publist">
         <li>
-          <div class="pub-title">Menta: On device small language model for mental health</div>
-          <div class="pub-meta">Xiangyuan Xue, … · arXiv · 2025</div>
-          <div class="pub-meta">
-            <a href="#" target="_blank" rel="noreferrer">Paper</a>
-            ·
-            <a href="#" target="_blank" rel="noreferrer">Code</a>
+          <div class="pub-title">
+            Menta: A Small Language Model for On-Device Mental Health Prediction
           </div>
-        </li>
-
-        <li>
-          <div class="pub-title">Another paper title</div>
-          <div class="pub-meta">Authors · Venue · Year</div>
           <div class="pub-meta">
-            <a href="#" target="_blank" rel="noreferrer">Paper</a>
+            Tianyi Zhang*, Xiangyuan Xue*, Lingyan Ruan, Shiya Fu, Feng Xia, Simon D'Alfonso,
+            Vassilis Kostakos, Ting Dang, Hong Jia.
+          </div>
+          <div class="pub-meta">
+            Under review at ACM IMWUT / UbiComp 2025.
+          </div>
+          <div class="pub-meta">
+            <a href="http://arxiv.org/abs/2512.02716" target="_blank" rel="noreferrer">arXiv: 2512.02716</a>
+            <!-- 如果你有代码链接，把 # 换成真实链接 -->
+            · <a href="#" target="_blank" rel="noreferrer">Code</a>
           </div>
         </li>
       </ol>
+
+      <p class="pub-meta" style="margin-top:10px;">
+        * denotes co-first authorship.
+      </p>
     </section>
 
+    <!-- Research -->
+    <section class="card" id="research" style="margin-top:14px;">
+      <h2 class="section-title">Research</h2>
+
+      <ul style="margin:0; padding-left:18px;">
+        <li>
+          <strong>SLM Foundation Models for Wearable Sensors</strong> (Research Assistant, UoA, 11/2025–Present):
+          building SLM-style foundation models for wearable sensor data and studying generalizable representations from
+          large-scale physiological and activity datasets.
+        </li>
+        <li>
+          <strong>Multimodal Reasoning Large Language Models (MLLMs)</strong> (Research Assistant, UoA, 10/2025–Present):
+          investigating planning–execute–reflect style loops for long-horizon tasks, with a focus on adaptive reasoning horizons,
+          feedback-based rewards, and reflection-driven re-planning.
+        </li>
+        <li>
+          <strong>On-Device Mental Health Prediction</strong> (Research Assistant, UoA, 09/2025–11/2025):
+          fine-tuning and evaluation of a small language model for mental health-related prediction, including zero-shot, few-shot,
+          and fine-tuning experiments, plus deployment experiments on mobile devices.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section class="card" id="education" style="margin-top:14px;">
+      <h2 class="section-title">Education</h2>
+      <div class="pub-meta" style="margin-top:2px;">
+        <strong>The University of Auckland</strong> · BSc (Hons) in Computer Science · 07/2024–05/2028 (Expected)
+      </div>
+      <div class="pub-meta" style="margin-top:6px;">
+        GPA: 7.45/9 (First Class)
+      </div>
+      <div class="pub-meta" style="margin-top:6px;">
+        Selected coursework: Discrete Structures, Algorithms & Data Structures, Computer Systems,
+        Mathematics for Computer Science, Computer Organization, Machine Learning, Artificial Intelligence.
+      </div>
+    </section>
+
+    <!-- Contact -->
     <section class="card" id="contact" style="margin-top:14px;">
       <h2 class="section-title">Contact</h2>
       <p style="margin:0;">
-        Email: <a href="mailto:xxue752@aucklanduni.ac.nz">xxue752@aucklanduni.ac.nz</a>
+        Email: <a href="mailto:xxue752@aucklanduni.ac.nz">xxue752@aucklanduni.ac.nz</a><br />
+        GitHub: <a href="https://github.com/xxue752-nz" target="_blank" rel="noreferrer">https://github.com/xxue752-nz</a>
       </p>
+      <!-- 你简历里有手机号；如果你不想公开，建议不要放在网站上 -->
     </section>
   </main>
 
